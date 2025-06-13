@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "679607462977",
+    "project_id": "resqnect-609d7",
+    "storage_bucket": "resqnect-609d7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679607462977:android:04b1e9e461a370192caac0",
+        "android_client_info": {
+          "package_name": "com.example.home"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAltR5dBG9BZAAyEz3rKmdc4A4_syrhOGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
