@@ -62,6 +62,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         Assistance Request
                    </button>
                    <button
+                   onClick={() => handleNavigation("/emergency-alerts")}
+                    className="w-full text-left py-4 px-6"
+                   >
+                    Emergency Alerts
+                   </button>
+                   <button
                     onClick={() => handleNavigation("/team-management")}
                     className="w-full text-left py-4 px-6 text-[#444444] font-semibold hover:bg-blue-200"
                    >

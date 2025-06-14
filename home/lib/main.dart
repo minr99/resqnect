@@ -9,10 +9,24 @@ import 'widgets/pop.dart';
 import 'widgets/archived_account.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  
+  try {
+    await dotenv.load(fileName: ".env");
+    print('Environment variables loaded successfully');
+  } catch (e) {
+    print('Error loading .env file: $e');
+    // You might want to handle this error appropriately
+  }
+  
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const ResqnectApp());
 }
 
